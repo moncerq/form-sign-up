@@ -69,11 +69,14 @@ form {
     margin-right: 50px;
 }
 
-input {
-    background-color: var(--main-placeholder-color);
-    border: none;
-    border-bottom: 0.5px solid var(--main-border-color);
-    outline: none;
+input:hover {
+    border-color: var(--main-button-color);
+}
+
+
+input:focus {
+    border-color: var(--main-button-color);
+    box-shadow: 0 0 25px rgba(189, 65, 66, 0.7);
 }
 
 .form-header,
@@ -143,10 +146,11 @@ input {
     border-bottom: 0.5px solid var(--main-border-color);
     outline: none;
     height: 30px;
-    font-size: 30px;
+    font-size: 20px;
     color: whitesmoke;
     padding-top: 5px;
     padding-bottom: 5px;
+    padding-left: 10px;
 }
 
 .account-wrapper,
@@ -163,4 +167,18 @@ button {
     color: whitesmoke;
     font-size: 1.2em;
     font-weight: bold;
+}
+
+button:hover {
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+a:active {
+    color:whitesmoke;
 }
